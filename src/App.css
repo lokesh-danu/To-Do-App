@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Varela&family=Varela+Round&display=swap');
+.home{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+    margin-top: 50px;
+    font-size: 6rem;
+    font-family: 'Dancing Script';
+    color: #bd0718;;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input input{
+    font-family: 'Playfair Display', serif;
+    border-radius: 10px;
+    width: 40vw;
+    margin: 50px;
+    height: 2rem;
+    padding-left: 20px;
 }
+.list-cnt{
+    width: 100vw;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item{
+    width: 40vw;
+    border-radius: 10px;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    margin: 12px 0;
+    border: none;
+    box-shadow: #d2c45b 1px 8px 6px;
+}
+.incomplete{
+    background-color: #5dffff;
+    color: #493d3d;
+}
+.complete{
+    background-color: red;
+    text-decoration: line-through;
+}
+.completed{
+    display: flex;
+    flex-direction: column;
+}
+.completed button{
+    width: 25vw;
+    border-radius: 10px;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    margin: 12px 0;
+    border: none;
+    background-color: red;
+    box-shadow: 7px 9px 8px white;
+}
+.remove{
+    width: 350px;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: rgb(243 215 79);
+    color: #234910;
+    border: none;
+    font-family: 'Roboto';
+}
+.right-heading{
+    text-align: center;
+    font-family: roboto;
+    font-size: 1.5rem;
+    color: #fff8a0;
 }
